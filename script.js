@@ -86,3 +86,10 @@ setInterval(() => {
         }
     );
 }, 5000);
+
+window.addEventListener('click', () => {
+    const music = document.getElementById('bg-music');
+    if (music.paused) {
+        music.play();
+    }
+}, { once: true });
